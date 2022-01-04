@@ -1,0 +1,9 @@
+docker build -t <nombre app> .  --> leer el archivo de Docker
+docker images     --> visualizar imágenes
+docker run <nombre app> -it flaskapp /bin/sh    --> sistema iterativo docker en linux
+	- ls
+	-exit
+docker run -it --publish 4000:7000 <nombre app>   -->se ejecuta en el contenedor puerto 4000, pero en el localhost en el 7000
+docker run -ir -p 4000:7000 -d <nombre app>  -> lo mismo pero se ejecuta como un proceso, devuelve un id
+docker container ls  --> ver id y proceso en ejecucion
+docker stop <id>  --> para proceso
